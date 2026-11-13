@@ -9,7 +9,7 @@ function testApp() {
   const requiredIds = [
     'screen-welcome', 'screen-quiz', 'screen-results',
     'btn-mode-all', 'btn-mode-random-20', 'btn-mode-random-30',
-    'quiz-options-container', 'quiz-waiting-banner', 'quiz-feedback-banner',
+    'quiz-options-container', 'quiz-feedback-banner',
     'btn-next-question', 'wrong-questions-section', 'btn-retry-wrong'
   ];
 
@@ -28,8 +28,8 @@ function testApp() {
   }
 
   // Check app.js key handlers
-  if (!js.includes('setTimeout') || !js.includes('2000')) {
-    throw new Error('app.js missing 2000ms delay logic');
+  if (!js.includes('evaluateAnswer')) {
+    throw new Error('app.js missing evaluateAnswer logic');
   }
   if (!js.includes('shuffleArray')) {
     throw new Error('app.js missing shuffle logic for random mode');

@@ -191,7 +191,7 @@
     quizQText.textContent = q.question;
 
     // Reset Elements
-    quizWaitingBanner.classList.remove('active');
+    if (quizWaitingBanner) quizWaitingBanner.classList.remove('active');
     quizFeedbackBanner.classList.remove('active', 'success', 'danger');
     btnNextQuestion.classList.remove('active');
     btnNextQuestion.innerHTML = (currentIndex === total - 1)
@@ -218,7 +218,7 @@
   }
 
   // ==========================================================================
-  // User Selection & 2-Second Delay
+  // User Selection & Instant Answer Evaluation
   // ==========================================================================
 
   function onOptionSelected(selectedIndex, selectedElement) {
@@ -234,14 +234,8 @@
     const allOptItems = quizOptionsContainer.querySelectorAll('.option-item');
     allOptItems.forEach(item => item.classList.add('disabled'));
 
-    // Show waiting spinner (2s)
-    quizWaitingBanner.classList.add('active');
-
-    // Wait exactly 2000ms
-    answerTimer = setTimeout(() => {
-      quizWaitingBanner.classList.remove('active');
-      evaluateAnswer(selectedIndex, q, allOptItems);
-    }, 2000);
+    // Evaluate immediately without delay
+    evaluateAnswer(selectedIndex, q, allOptItems);
   }
 
   function evaluateAnswer(selectedIndex, q, allOptItems) {

@@ -11,7 +11,7 @@ Website ôn thi trắc nghiệm tĩnh phục vụ kỳ thi Giữa Kỳ (GK) môn
   - 🎲 **Thi thử ngẫu nhiên:** Hệ thống tự động xáo trộn và rút ngẫu nhiên bộ đề **20 câu** hoặc **30 câu**.
 - **Trải nghiệm thi tương tác chuẩn UX:**
   - Mỗi lượt chỉ hiển thị 1 câu hỏi, tạo sự tập trung tối đa.
-  - Sau khi chọn phương án, hệ thống chờ **đúng 2 giây** với hiệu ứng kiểm tra rồi mới công bố kết quả.
+  - Phản hồi tức thì: Ngay khi bạn bấm chọn đáp án, hệ thống lập tức công bố kết quả.
   - Tô màu trực quan: **Xanh lá** cho đáp án đúng, **Đỏ** cho đáp án bạn chọn sai.
   - Tự động hiển thị giải thích (nếu đề gốc có sẵn).
   - Xuất hiện nút **"Câu tiếp theo ➔"** để bạn chủ động chuyển câu khi đã xem xong.
@@ -70,25 +70,25 @@ Bây giờ bạn có thể mở link này trên cả điện thoại lẫn lapto
 
 ---
 
-## 🔄 Hướng Dẫn Tái Sử Dụng Script Trích Xuất Khi Có Thêm Đề Mới
+## 🔄 Tự Động Hóa 100% Khi Thêm Đề Mới (GitHub Actions)
 
-Khi bạn làm thêm các bài tập lý thuyết mới trên Moodle hoặc tải thêm các file HTML bài làm khác:
+Dự án đã được tích hợp sẵn workflow **GitHub Actions** (`.github/workflows/update-questions.yml`). Khi bạn có thêm file HTML bài làm Moodle mới:
 
-1. **Lưu file HTML:** Trên trang review bài làm của Moodle, nhấn `Ctrl + S` (hoặc chuột phải chọn *Lưu trang dưới dạng...* / *Save page as...*), chọn định dạng **Webpage, HTML Only** hoặc **Webpage, Complete**.
-2. **Bỏ file vào thư mục `html/`:** Kéo thả các file `.html` mới này vào thư mục `html/` của dự án.
-3. **Chạy lệnh trích xuất:**
-   Mở terminal tại thư mục dự án và chạy:
+### Cách 1: Tự động hoàn toàn qua GitHub (Khuyên dùng)
+1. Bạn chỉ cần **kéo thả hoặc upload file `.html` mới** vào thư mục `html/` trên GitHub (hoặc dùng `git push`).
+2. GitHub Actions sẽ **tự động kích hoạt**:
+   - Chạy script trích xuất câu hỏi và đáp án từ file HTML mới.
+   - Khử trùng lặp thông minh với cơ sở dữ liệu hiện có.
+   - Tự động commit và cập nhật file `data/questions.json` và `data/questions.js`.
+   - GitHub Pages tự động nhận đề mới mà bạn **không cần chạy bất kỳ câu lệnh nào** trên máy tính!
+
+### Cách 2: Chạy thử trước ở máy cục bộ
+1. Bỏ file `.html` mới vào thư mục `html/`.
+2. Mở terminal tại thư mục dự án và chạy:
    ```bash
    node scripts/extract.mjs
    ```
-4. **Kết quả:**
-   - Script sẽ tự động quét tất cả file HTML trong thư mục `html/` cùng file `questions.md`.
-   - Tự động chuẩn hóa văn bản, giải mã ký tự đặc biệt, lọc lấy đáp án đúng và loại bỏ trùng lặp.
-   - Cập nhật trực tiếp vào 2 file:
-     - `data/questions.json`
-     - `data/questions.js`
-5. **Cập nhật lên web:**
-   Chỉ cần commit và push lại lên GitHub:
+3. Commit và push lên GitHub:
    ```bash
    git add html/ data/
    git commit -m "update: add new quiz questions"
