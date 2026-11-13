@@ -1,0 +1,1100 @@
+window.QUIZ_DATA = [
+  {
+    "id": "q-1",
+    "source": "BTLT1 - 13_10_2026, 10H30 - 10H55_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Phát biểu nào sau đây chính xác.",
+    "options": [
+      "Khi một tiến trình hoàn tất I/O nếu nó là tiến trình có độ ưu tiên cao nhất thì sẽ lập tức được nhận CPU và chuyển sang trạng thái running.",
+      "Các tiến trình vừa được khởi tạo sẽ nằm ở job list trong thời gian chờ đợi vào ready list.",
+      "Không phát biểu nào chính xác.",
+      "Dispatcher đóng vai trò lựa chọn tiến trình được nhận CPU từ ready list và chuyển giao CPU cho tiến tình được chọn."
+    ],
+    "correctIndex": 1,
+    "correctAnswer": "Các tiến trình vừa được khởi tạo sẽ nằm ở job list trong thời gian chờ đợi vào ready list.",
+    "explanation": null
+  },
+  {
+    "id": "q-2",
+    "source": "BTLT1 - 13_10_2026, 10H30 - 10H55_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Kiến trúc hệ điều hành nào dưới đây có các dịch vụ và chức năng hệ điều hành đều chạy trong không gian hạt nhân (kernel mode), tạo nên một cấu trúc hạt nhân lớn và phức tạp?",
+    "options": [
+      "Một khối (Monolithic)",
+      "Vi nhân (Microkernel)",
+      "Phân tầng (Layered)",
+      "Lai (Hybrid)"
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "Một khối (Monolithic)",
+    "explanation": null
+  },
+  {
+    "id": "q-3",
+    "source": "BTLT1 - 13_10_2026, 10H30 - 10H55_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Tiến trình đang thực thi sẽ chuyển về loại danh sách nào khi phải đợi một thao tác I/O hoàn tất.",
+    "options": [
+      "Không câu nào đúng.",
+      "Danh sách chờ đợi (Waiting list).",
+      "Danh sách sẵn sàng (Ready list).",
+      "Danh sách các công việc (Job list)."
+    ],
+    "correctIndex": 1,
+    "correctAnswer": "Danh sách chờ đợi (Waiting list).",
+    "explanation": null
+  },
+  {
+    "id": "q-4",
+    "source": "BTLT1 - 13_10_2026, 10H30 - 10H55_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Tiến trình đang thực thi sẽ chuyển về loại danh sách nào khi xảy ra sự kiện đợi một thao tác I/O hoàn tất.",
+    "options": [
+      "Danh sách chờ đợi (Waiting list).",
+      "Không câu nào đúng.",
+      "Danh sách các công việc (Job list).",
+      "Danh sách sẵn sàng (Ready list)."
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "Danh sách chờ đợi (Waiting list).",
+    "explanation": null
+  },
+  {
+    "id": "q-5",
+    "source": "BTLT1 - 13_10_2026, 10H30 - 10H55_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Cơ chế nào sau đây chỉ cho phép truyền dữ liệu một chiều giữa hai tiến trình.",
+    "options": [
+      "Pipe",
+      "UDP Socket",
+      "TCP Socket",
+      "Shared Memory"
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "Pipe",
+    "explanation": "**Câu hỏi 17 (Trang 8):** Khi trao đổi bằng socket, IP address là để định danh cho hai tiến trình client và server.\n**Câu hỏi 18 (Trang 8):** Tiến trình P1 bị rơi vào trạng thái Zombie khi nào\n**Câu hỏi 19 (Trang 8):** Để truy cập vào các dịch vụ của hệ điều hành, chúng ta cần thông qua.\n**Câu hỏi 15 (Trang 8):** Kiến trúc hệ điều hành nào dưới đây có các dịch vụ và chức năng hệ điều hành đều chạy trong không gian hạt nhân (kernel mode), tạo nên một cấu trúc hạt nhân lớn và phức tạp?\n**Câu hỏi 16 (Trang 8):** Khác biệt chính của multitasking OS so với phiên bản tiền nhiệm multiprogramming OS là gì.\n**Câu hỏi 13 (Trang 9):** Khi tiến trình đang thực thi mà bị tạm dừng, Program Counter trong PCB sẽ lưu lại thông tin gì?\n**Câu hỏi 14 (Trang 9):** Khi tiến trình đang đọc file mà bị tạm dừng, thì thông tin liên quan tới việc đọc file này sẽ được lưu trữ ở đâu trong PCB (khối quản lý tiến trình)?\n**Câu hỏi 11 (Trang 9):** Cho 3 tiến trình P1, P2, và P3 với thời gian đến hệ thống lần lượt là 0, 1, 2 và thời gian xử lý lần lượt là 5, 4, 3. Hệ thống áp dụng thuật toán điều phối SJF độc quyền. Thời gian lưu trú trung bình của các tiến trình là:\n**Câu hỏi 12 (Trang 9):** Tiến trình đang thực thi sẽ chuyển về loại danh sách nào khi xảy ra sự kiện đợi một thao tác I/O hoàn tất.\n**Câu hỏi 9 (Trang 10):** Tiêu chí nào sau đây là chính yếu cho một hệ thống đa nhiệm.\n**Câu hỏi 10 (Trang 10):** Cho 3 tiến trình P1, P2 và P3 có thời gian đến lần lượt là 0, 1, 2 và thời gian xử lý lần lượt là 7, 3, 2. Hệ thống áp dụng thuật toán điều phối SJF không độc quyền (SRTN). Thời gian chờ trung bình của các tiến trình là:\n**Câu hỏi 7 (Trang 10):** Phát biểu nào sau đây KHÔNG đúng về thuật toán lập lịch theo ưu tiên?\n**Câu hỏi 8 (Trang 10):** Phát biểu nào sau đây chính xác.\n**Câu hỏi 5 (Trang 11):** Cho 3 tiến trình P1, P2 và P3 có thời gian đến lần lượt là 0, 1, 2 thời gian xử lý lần lượt là 5, 4, 3 và độ ưu tiên lần lượt là 3, 1, 2 (giá trị càng nhỏ mức ưu tiên càng cao). Hệ thống áp dụng thuật toán điều phối theo độ ưu tiên độc quyền. Tại thời điểm t = 6, tiến trình nào đang sở hữu CPU?\n**Câu hỏi 6 (Trang 11):** Trong các phát biểu sau, chọn ra phát biểu KHÔNG chính xác về chế độ người dùng và chế độ nhân (kernel)?\n**Câu hỏi 3 (Trang 11):** Cho 3 tiến trình P1, P2 và P3 có thời gian đến lần lượt là 0, 1, 2 thời gian xử lý lần lượt là 6, 3, 2 và độ ưu tiên lần lượt là 3, 1, 2 (giá trị càng nhỏ mức ưu tiên càng cao). Hệ thống áp dụng thuật toán điều phối theo độ ưu tiên không độc quyền. Thời gian chờ trung bình của các tiến trình là:\n**Câu hỏi 4 (Trang 11):** Nếu một tiến trình có thời gian xử lý là 10 ms và thời gian chờ là 20 ms, thời gian lưu trú của tiến trình đó là bao nhiêu?\n**Câu hỏi 1 (Trang 12):** Phát biểu nào KHÔNG chính xác khi nói về cơ chế liên lạc bằng SOCKET.\n**Câu hỏi 2 (Trang 12):** Phát biểu nào sau đây KHÔNG đúng về các thuật toán lập lịch?\nToàn bộ 40 câu hỏi (gồm phần **BTL1** và **BTLT2**) trong file PDF được trích xuất, chuẩn hóa lỗi nhận diện chữ và trình bày theo đúng cấu trúc yêu cầu:"
+  },
+  {
+    "id": "q-6",
+    "source": "BTLT1 - 13_10_2026, 10H30 - 10H55_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Kiến trúc HĐH Windows 10 hiện giờ là được tổ chức theo kiến trúc nào.",
+    "options": [
+      "Vi nhân (Microkernel)",
+      "Một khối (Monolithic)",
+      "Phân tầng (Layered)",
+      "Lai (Hybrid)"
+    ],
+    "correctIndex": 3,
+    "correctAnswer": "Lai (Hybrid)",
+    "explanation": null
+  },
+  {
+    "id": "q-7",
+    "source": "BTLT1 - 13_10_2026, 10H30 - 10H55_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Khi tiến trình bị dừng do thao tác I/O, khi hoàn thành xong thao tác I/O sẽ chuyển trạng thái?",
+    "options": [
+      "Từ ready sang running",
+      "Từ blocked sang running",
+      "Từ blocked sang ready"
+    ],
+    "correctIndex": 2,
+    "correctAnswer": "Từ blocked sang ready",
+    "explanation": null
+  },
+  {
+    "id": "q-8",
+    "source": "BTLT1 - 13_10_2026, 10H30 - 10H55_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Chọn phát biểu chính xác nhất.",
+    "options": [
+      "Khi một tiến trình cha kết thúc thì các tiến trình con của nó sẽ phải kết thúc theo",
+      "Cả hai phát biểu A và B đều chưa hoàn toàn chính xác",
+      "Cả hai phát biểu A và B đều chính xác trong mọi tình huống",
+      "Tiến trình cha không được kết thúc trước tiến trình con"
+    ],
+    "correctIndex": 1,
+    "correctAnswer": "Cả hai phát biểu A và B đều chưa hoàn toàn chính xác",
+    "explanation": null
+  },
+  {
+    "id": "q-9",
+    "source": "BTLT1 - 13_10_2026, 10H30 - 10H55_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Thành phần nào KHÔNG phải là một phần của hệ điều hành.",
+    "options": [
+      "Bộ nhớ chính (Main Memory)",
+      "Hệ thống quản lý nhập xuất (I/O Management)",
+      "Các hàm hệ thống (System Calls)",
+      "Hệ thống tập tin (File System)"
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "Bộ nhớ chính (Main Memory)",
+    "explanation": null
+  },
+  {
+    "id": "q-10",
+    "source": "BTLT1 - 13_10_2026, 10H30 - 10H55_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Đặc điểm nào sau đây KHÔNG đúng với socket TCP.",
+    "options": [
+      "Cần gán socket vào địa chỉ trước khi trao đổi thông điệp",
+      "Nhanh hơn UDP socket",
+      "Đòi hỏi xác nhận kết nối giữa client-server trước khi trao đổi thông điệp",
+      "An toàn hơn UDP"
+    ],
+    "correctIndex": 1,
+    "correctAnswer": "Nhanh hơn UDP socket",
+    "explanation": null
+  },
+  {
+    "id": "q-11",
+    "source": "BTLT1 - 13_10_2026, 10H30 - 10H55_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Cho 3 tiến trình P1, P2 và P3 có thời gian đến lần lượt là 0, 1, 2; thời gian xử lý lần lượt là 6, 3, 2 và độ ưu tiên lần lượt là 3, 1, 2 (giá trị càng nhỏ mức ưu tiên càng cao). Hệ thống áp dụng thuật toán điều phối theo độ ưu tiên không độc quyền. Thời gian chờ trung bình của các tiến trình là:",
+    "options": [
+      "2.33",
+      "3",
+      "2.67",
+      "3.33"
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "2.33",
+    "explanation": null
+  },
+  {
+    "id": "q-12",
+    "source": "BTLT1 - 13_10_2026, 10H30 - 10H55_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Khác biệt chính của multitasking OS so với phiên bản tiền nhiệm multiprogramming OS là gì.",
+    "options": [
+      "Cho phép nhiều chương trình nằm trong hệ thống tại một thời điểm.",
+      "Xử lý được nhiều tác vụ người dùng cùng lúc do thuật toán điều phối CPU giúp luân phiên xoay vòng các tác vụ.",
+      "Tận dụng thời gian nhàn rỗi của CPU.",
+      "Cho phép bộ nhớ chia sẻ giữa nhiều chương trình."
+    ],
+    "correctIndex": 1,
+    "correctAnswer": "Xử lý được nhiều tác vụ người dùng cùng lúc do thuật toán điều phối CPU giúp luân phiên xoay vòng các tác vụ.",
+    "explanation": null
+  },
+  {
+    "id": "q-13",
+    "source": "BTLT1 - 13_10_2026, 10H30 - 10H55_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Phát biểu nào sau đây KHÔNG đúng về thuật toán lập lịch theo ưu tiên?",
+    "options": [
+      "Các tiến trình có ưu tiên bằng nhau có thể được lập lịch theo thứ tự FCFS.",
+      "Lập lịch theo ưu tiên có thể là độc quyền hoặc không độc quyền.",
+      "Một ưu tiên được gắn với mỗi tiến trình, và CPU được cấp phát cho tiến trình có ưu tiên cao nhất.",
+      "Một thuật toán lập lịch theo ưu tiên độc quyền sẽ giành CPU nếu ưu tiên của tiến trình mới đến thấp hơn ưu tiên của tiến trình đang chạy."
+    ],
+    "correctIndex": 3,
+    "correctAnswer": "Một thuật toán lập lịch theo ưu tiên độc quyền sẽ giành CPU nếu ưu tiên của tiến trình mới đến thấp hơn ưu tiên của tiến trình đang chạy.",
+    "explanation": null
+  },
+  {
+    "id": "q-14",
+    "source": "BTLT1 - 13_10_2026, 10H30 - 10H55_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Phát biểu chính xác về hệ thống chia sẻ thời gian.",
+    "options": [
+      "Tất cả đều là tên gọi khác của hệ thống chia sẻ thời gian.",
+      "Tên gọi khác của hệ thống đa người dùng, đa nhiệm, tương tác.",
+      "Tên gọi khác của hệ thống xử lý đa chương.",
+      "Tên gọi khác của hệ thống thời gian thực."
+    ],
+    "correctIndex": 1,
+    "correctAnswer": "Tên gọi khác của hệ thống đa người dùng, đa nhiệm, tương tác.",
+    "explanation": null
+  },
+  {
+    "id": "q-15",
+    "source": "BTLT1 - 13_10_2026, 10H30 - 10H55_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Khi tiến trình đang thực thi mà bị tạm dừng, Program Counter trong PCB sẽ lưu lại thông tin gì?",
+    "options": [
+      "Số thứ tự của lệnh kế tiếp sẽ được thực thi",
+      "Nội dung lệnh sẽ được thực thi sau khi khôi phục lại",
+      "Tổng số lệnh đã được thi thi",
+      "Địa chỉ lệnh sẽ được thực thi sau khi khôi phục lại"
+    ],
+    "correctIndex": 3,
+    "correctAnswer": "Địa chỉ lệnh sẽ được thực thi sau khi khôi phục lại",
+    "explanation": null
+  },
+  {
+    "id": "q-16",
+    "source": "BTLT1 - 13_10_2026, 10H30 - 10H55_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Cho 3 tiến trình P1, P2 và P3 có thời gian đến lần lượt là 0, 1, 2 và thời gian xử lý lần lượt là 7, 3, 2. Hệ thống áp dụng thuật toán điều phối SJF không độc quyền (SRTN). Thời gian chờ trung bình của các tiến trình là:",
+    "options": [
+      "2",
+      "2.33",
+      "2.67",
+      "3"
+    ],
+    "correctIndex": 1,
+    "correctAnswer": "2.33",
+    "explanation": null
+  },
+  {
+    "id": "q-17",
+    "source": "BTLT1 - 13_10_2026, 10H30 - 10H55_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Phát biểu nào sau đây KHÔNG chính xác về PCB (khối quản lý tiến trình).",
+    "options": [
+      "Mỗi tiến trình trong hệ thống đều có một PCB riêng",
+      "PCB được lưu vào không gian địa chỉ cấp cho từng tiến trình để giúp tiến trình quản lý việc thực thi",
+      "PCB cung cấp thông tin cần thiết cho việc chuyển đổi ngữ cảnh (context switch)"
+    ],
+    "correctIndex": 1,
+    "correctAnswer": "PCB được lưu vào không gian địa chỉ cấp cho từng tiến trình để giúp tiến trình quản lý việc thực thi",
+    "explanation": null
+  },
+  {
+    "id": "q-18",
+    "source": "BTLT1 - 13_10_2026, 10H30 - 10H55_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Context Switch (chuyển đổi ngữ cảnh) sẽ được thực hiện khi nào.",
+    "options": [
+      "Thao tác I/O của một tiến trình kết thúc",
+      "Một tiến tình mới được tạo ra",
+      "Hệ điều hành chuyển CPU của tiến trình đang thực thi cho tiến trình khác",
+      "Tiến trình bị blocked trước đó thoả mãn điều kiện trở lại ready list"
+    ],
+    "correctIndex": 2,
+    "correctAnswer": "Hệ điều hành chuyển CPU của tiến trình đang thực thi cho tiến trình khác",
+    "explanation": null
+  },
+  {
+    "id": "q-19",
+    "source": "BTLT1 - 13_10_2026, 10H30 - 10H55_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Phát biểu nào sau đây KHÔNG đúng về các thuật toán lập lịch?",
+    "options": [
+      "Lập lịch SJF có thể là độc quyền hoặc không độc quyền.",
+      "Đối với các tiến trình có cùng độ ưu tiên, thứ tự đến (arrival time) có thể được xem là tiêu chí lựa chọn tiến trình.",
+      "Lập lịch FCFS có thể là độc quyền hoặc không độc quyền.",
+      "Lập lịch theo ưu tiên có thể là độc quyền hoặc không độc quyền."
+    ],
+    "correctIndex": 2,
+    "correctAnswer": "Lập lịch FCFS có thể là độc quyền hoặc không độc quyền.",
+    "explanation": null
+  },
+  {
+    "id": "q-20",
+    "source": "BTLT1 - 13_10_2026, 10H30 - 10H55_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Để truy cập vào các dịch vụ của hệ điều hành, chúng ta cần thông qua.",
+    "options": [
+      "Các API của ngôn ngữ lập trình.",
+      "Thư viện.",
+      "Các lệnh hợp ngữ.",
+      "Các hàm hệ thống."
+    ],
+    "correctIndex": 3,
+    "correctAnswer": "Các hàm hệ thống.",
+    "explanation": null
+  },
+  {
+    "id": "q-21",
+    "source": "BTLT1_24120231.html",
+    "question": "Tiến trình P1 bị rơi vào trạng thái Zombie khi nào.",
+    "options": [
+      "P1 kết thúc nhưng tiến trình cha của P1 chưa nhận được tín hiệu kết thúc",
+      "Tiến trình cha của P1 kết thúc trước P1",
+      "P1 bị thu hồi tài nguyên nhưng vẫn nằm trong hệ thống"
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "P1 kết thúc nhưng tiến trình cha của P1 chưa nhận được tín hiệu kết thúc",
+    "explanation": null
+  },
+  {
+    "id": "q-22",
+    "source": "BTLT1_24120231.html",
+    "question": "Khi tiến trình đang đọc file mà bị tạm dừng, thì thông tin liên quan tới việc đọc file này sẽ được lưu trữ ở đâu trong PCB (khối quản lý tiến trình)?",
+    "options": [
+      "Memory Management Information",
+      "Accounting Information",
+      "I/O status information"
+    ],
+    "correctIndex": 2,
+    "correctAnswer": "I/O status information",
+    "explanation": null
+  },
+  {
+    "id": "q-23",
+    "source": "BTLT1_24120231.html",
+    "question": "Nhóm thuật toán điều phối độc quyền phù hợp với hệ thống nào sau đây.",
+    "options": [
+      "Hệ thống chia sẻ thời gian (timesharing).",
+      "Hệ thống đa chương (multiprogramming).",
+      "Hệ thống theo lô (batch).",
+      "Hệ thống phân tán (distributed)."
+    ],
+    "correctIndex": 2,
+    "correctAnswer": "Hệ thống theo lô (batch).",
+    "explanation": null
+  },
+  {
+    "id": "q-24",
+    "source": "BTLT1_24120231.html",
+    "question": "Cho 3 tiến trình P1, P2, và P3 với thời gian đến hệ thống lần lượt là 0, 1, 2 và thời gian xử lý lần lượt là 5, 4, 3. Hệ thống áp dụng thuật toán điều phối SJF độc quyền. Thời gian lưu trú trung bình của các tiến trình là:",
+    "options": [
+      "7.33",
+      "5.33",
+      "6.33",
+      "4.33"
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "7.33",
+    "explanation": null
+  },
+  {
+    "id": "q-25",
+    "source": "BTLT1_24120231.html",
+    "question": "Tiêu chí nào sau đây là chính yếu cho một hệ thống đa nhiệm.",
+    "options": [
+      "Tăng tính tương tác với người dùng.",
+      "Cực đại hoá việc sử dụng CPU.",
+      "Nạp nhiều chương trình vào hệ thống.",
+      "Giảm số thao tác I/O."
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "Tăng tính tương tác với người dùng.",
+    "explanation": null
+  },
+  {
+    "id": "q-26",
+    "source": "BTLT1_24120231.html",
+    "question": "Trong các phát biểu sau, chọn ra phát biểu KHÔNG chính xác về chế độ người dùng và chế độ nhân (kernel)?",
+    "options": [
+      "Trong chế độ nhân, Hệ điều hành có thể thực thi mọi lệnh.",
+      "Trong chế độ người dùng, chương trình người dùng chỉ có thể thực thi một tập hợp con các lệnh.",
+      "Việc có hai chế độ hoạt động giúp ngăn chặn chương trình người dùng truy cập vào các lệnh quan trọng.",
+      "Tất cả đều không chính xác."
+    ],
+    "correctIndex": 3,
+    "correctAnswer": "Tất cả đều không chính xác.",
+    "explanation": null
+  },
+  {
+    "id": "q-27",
+    "source": "BTLT1_24120231.html",
+    "question": "Khi trao đổi bằng socket, IP address là để định danh cho hai tiến trình client và server.",
+    "options": [
+      "Sai",
+      "Đúng"
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "Sai",
+    "explanation": null
+  },
+  {
+    "id": "q-28",
+    "source": "BTLT1_24120231.html",
+    "question": "Trong kiến trúc Microkernel, các thành phần nào sau đây được để trong nhân HĐH (kernel).",
+    "options": [
+      "Quản lý tập tin",
+      "Trình điều khiển thiết bị",
+      "Quản lý và điều phối CPU",
+      "Tất cả các thành phần của HĐH"
+    ],
+    "correctIndex": 2,
+    "correctAnswer": "Quản lý và điều phối CPU",
+    "explanation": null
+  },
+  {
+    "id": "q-29",
+    "source": "BTLT1_24120231.html",
+    "question": "Lựa chọn câu trả lời chính xác nhất cho điều phối CPU nhiều hàng đợi (Multiple Queue CPU scheduling).",
+    "options": [
+      "PB3: Hệ thống có thể sử dụng nhiều hàng đợi với độ ưu tiên khác nhau.",
+      "PB2 và PB3 đúng.",
+      "PB2: Tiến trình trong hàng đợi có độ ưu tiên cao nhất sẽ được xử lý khi tất cả các hàng đợi khác trống.",
+      "PB1: Mục đích của nhiều hàng đợi là để phân loại các tiến trình theo các tiêu chí khác nhau như độ ưu tiên, loại tiến trình.",
+      "PB1 và PB3 đúng.",
+      "PB1 và PB2 đúng.",
+      "Cả ba PB1, PB2 và PB3 đều đúng."
+    ],
+    "correctIndex": 4,
+    "correctAnswer": "PB1 và PB3 đúng.",
+    "explanation": null
+  },
+  {
+    "id": "q-30",
+    "source": "BTLT1_24120231.html",
+    "question": "MSDOS là ví dụ của kiến trúc nào sau đây.",
+    "options": [
+      "Monolithic",
+      "Virtual Machine",
+      "Layered",
+      "Client-Server"
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "Monolithic",
+    "explanation": null
+  },
+  {
+    "id": "q-31",
+    "source": "BTLT1_24120231.html",
+    "question": "Phát biểu nào sau đây là chính xác về System Calls (Lời gọi hệ thống).",
+    "options": [
+      "System call là tập lệnh hỗ trợ giao tiếp giữa chương trình ứng dụng và phần cứng.",
+      "System call là tập lệnh hỗ trợ giao tiếp giữa hệ điều hành với phần cứng.",
+      "System call cung cấp giao diện đồ hoạ để tương tác với dịch vụ của hệ điều hành.",
+      "System call là tập lệnh hỗ trợ truy cập vào các dịch vụ của hệ điều hành."
+    ],
+    "correctIndex": 3,
+    "correctAnswer": "System call là tập lệnh hỗ trợ truy cập vào các dịch vụ của hệ điều hành.",
+    "explanation": null
+  },
+  {
+    "id": "q-32",
+    "source": "BTLT1_24120231.html",
+    "question": "Chọn phát biểu đúng cho tiến trình (Process).",
+    "options": [
+      "Tiến trình là chương trình đang được thực thi",
+      "Tiến trình là chương trình lưu trên đĩa cứng",
+      "Tiến trình là chương trình đã được biên dịch bởi một ngôn ngữ lập trình"
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "Tiến trình là chương trình đang được thực thi",
+    "explanation": null
+  },
+  {
+    "id": "q-33",
+    "source": "BTLT2 - 10_11_2026, 10H30 - 10H50 (1 lần)_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Công thức tính thời gian truy cập bộ nhớ hiệu dụng (EAT) trong hệ thống có lỗi trang là:",
+    "options": [
+      "EAT = (1 – p) × tm + p × tp",
+      "EAT = p × tm + (1 – p) × tp",
+      "EAT = tm × tp",
+      "EAT = tm + tp"
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "EAT = (1 – p) × tm + p × tp",
+    "explanation": null
+  },
+  {
+    "id": "q-34",
+    "source": "BTLT2 - 10_11_2026, 10H30 - 10H50 (1 lần)_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Một hệ thống bộ nhớ phân trang có kích thước bộ nhớ vật lý là 128MB và kích thước trang là 4KB. Số bit cần để xác định f (số khung trang) là?",
+    "options": [
+      "15",
+      "12",
+      "17",
+      "10"
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "15",
+    "explanation": null
+  },
+  {
+    "id": "q-35",
+    "source": "BTLT2 - 10_11_2026, 10H30 - 10H50 (1 lần)_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Phát biểu nào KHÔNG chính xác về bảng thư mục gốc (Root Directory hay RDET) trong hệ thống FAT12/16/32",
+    "options": [
+      "RDET không chứa dữ liệu thật sự của các tập tin",
+      "Kích thước của một phần tử trong RDET sẽ khác nhau tuỳ vào loại bảng FAT được sử dụng",
+      "RDET là thư mục cấp cao nhất trong một hệ thống tập tin",
+      "Các phần tử trong RDET cho biết thông tin về các tập tin/thư mục đang lưu ở thư mục gốc"
+    ],
+    "correctIndex": 1,
+    "correctAnswer": "Kích thước của một phần tử trong RDET sẽ khác nhau tuỳ vào loại bảng FAT được sử dụng",
+    "explanation": null
+  },
+  {
+    "id": "q-36",
+    "source": "BTLT2 - 10_11_2026, 10H30 - 10H50 (1 lần)_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Loại cấp phát nào gây phân mảnh bên ngoài (ngoại vi).",
+    "options": [
+      "Cấp phát theo chỉ mục (Indexed Allocation)",
+      "Cấp phát liên tục (Contiguous Allocation)",
+      "Cấp phát theo danh sách (Linked List Allocation)"
+    ],
+    "correctIndex": 1,
+    "correctAnswer": "Cấp phát liên tục (Contiguous Allocation)",
+    "explanation": null
+  },
+  {
+    "id": "q-37",
+    "source": "BTLT2 - 10_11_2026, 10H30 - 10H50 (1 lần)_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Quá trình ánh xạ địa chỉ logic thành địa chỉ vật lý được xử lý bởi:",
+    "options": [
+      "Bộ điều khiển bộ nhớ.",
+      "Bộ xử lý trung tâm (CPU).",
+      "Bộ nhớ ảo.",
+      "Đơn vị quản lý bộ nhớ (MMU - Memory Management Unit)."
+    ],
+    "correctIndex": 3,
+    "correctAnswer": "Đơn vị quản lý bộ nhớ (MMU - Memory Management Unit).",
+    "explanation": null
+  },
+  {
+    "id": "q-38",
+    "source": "BTLT2 - 10_11_2026, 10H30 - 10H50 (1 lần)_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Giá trị E5h ở byte đầu tiên của một phần tử trong bảng thư mục gốc (Root directory) cho biết điều gì.",
+    "options": [
+      "Phần tử trống chưa được sử dụng",
+      "Phần tử chỉ tới bad sector",
+      "Phần tử chỉ tới một tập tin vừa bị xoá",
+      "Phần tử chỉ tới một tập tin bị lỗi"
+    ],
+    "correctIndex": 2,
+    "correctAnswer": "Phần tử chỉ tới một tập tin vừa bị xoá",
+    "explanation": null
+  },
+  {
+    "id": "q-39",
+    "source": "BTLT2 - 10_11_2026, 10H30 - 10H50 (1 lần)_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Bộ nhớ ảo là gì?",
+    "options": [
+      "Bộ nhớ chỉ tồn tại khi máy tính tắt nguồn.",
+      "Một phần của bộ nhớ RAM được dành riêng để lưu trữ dữ liệu tạm thời.",
+      "Một hệ thống lưu trữ dữ liệu không cần dùng RAM.",
+      "Một kỹ thuật cho phép sử dụng không gian đĩa cứng như bộ nhớ bổ sung."
+    ],
+    "correctIndex": 3,
+    "correctAnswer": "Một kỹ thuật cho phép sử dụng không gian đĩa cứng như bộ nhớ bổ sung.",
+    "explanation": null
+  },
+  {
+    "id": "q-40",
+    "source": "BTLT2 - 10_11_2026, 10H30 - 10H50 (1 lần)_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Một hệ thống có bộ nhớ ảo 10-bit, kích thước trang 256 bytes. Số trang tối đa trong không gian địa chỉ ảo là bao nhiêu?",
+    "options": [
+      "8",
+      "2",
+      "4",
+      "16"
+    ],
+    "correctIndex": 2,
+    "correctAnswer": "4",
+    "explanation": null
+  },
+  {
+    "id": "q-41",
+    "source": "BTLT2 - 10_11_2026, 10H30 - 10H50 (1 lần)_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Trong loại cấp phát nào, hệ thống tập tin cần lưu lại khối đĩa đầu tiên và khối đĩa cuối cùng cấp cho một tập tin.",
+    "options": [
+      "Cấp phát theo chỉ mục (Indexed Allocation)",
+      "Cấp phát theo danh sách (Linked List Allocation)",
+      "Cấp phát liên tục (Contiguous Allocation)"
+    ],
+    "correctIndex": 1,
+    "correctAnswer": "Cấp phát theo danh sách (Linked List Allocation)",
+    "explanation": null
+  },
+  {
+    "id": "q-42",
+    "source": "BTLT2 - 10_11_2026, 10H30 - 10H50 (1 lần)_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Một máy có bộ nhớ chính 1KB, kích thước trang 256 bytes. Số lượng khung trang vật lý là bao nhiêu?",
+    "options": [
+      "4",
+      "8",
+      "16",
+      "2"
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "4",
+    "explanation": null
+  },
+  {
+    "id": "q-43",
+    "source": "BTLT2 - 10_11_2026, 10H30 - 10H50 (1 lần)_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Một hệ thống sử dụng cơ chế phân trang với không gian địa chỉ logic cần 32 bit lưu trữ và kích thước trang là 4KB. Số bit cần thiết để xác định P (số trang) là bao nhiêu?",
+    "options": [
+      "12",
+      "20",
+      "10",
+      "22"
+    ],
+    "correctIndex": 1,
+    "correctAnswer": "20",
+    "explanation": null
+  },
+  {
+    "id": "q-44",
+    "source": "BTLT2 - 10_11_2026, 10H30 - 10H50 (1 lần)_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Phân mảnh nội vi (internal fragmentation) xảy ra khi nào?",
+    "options": [
+      "Khi phần vùng cấp phát lớn hơn nhu cầu thực tế của tiến trình.",
+      "Khi một tiến trình bị hoán đổi ra đĩa.",
+      "Khi không còn vùng trống trong bộ nhớ.",
+      "Khi bộ nhớ trống bị chia nhỏ và không đủ lớn để chứa tiến trình mới."
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "Khi phần vùng cấp phát lớn hơn nhu cầu thực tế của tiến trình.",
+    "explanation": null
+  },
+  {
+    "id": "q-45",
+    "source": "BTLT2 - 10_11_2026, 10H30 - 10H50 (1 lần)_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Cho biết tm = 92ns, tp = 158ns, tỷ lệ lỗi trang là 0.7. EAT là bao nhiêu?",
+    "options": [
+      "138.2ns",
+      "120ns",
+      "150ns",
+      "130ns"
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "138.2ns",
+    "explanation": null
+  },
+  {
+    "id": "q-46",
+    "source": "BTLT2 - 10_11_2026, 10H30 - 10H50 (1 lần)_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Phân mảnh ngoại vi (external fragmentation) xảy ra khi nào?",
+    "options": [
+      "Khi dữ liệu bị mất trong quá trình chuyển trang.",
+      "Khi các trang được nạp đầy đủ vào khung trang.",
+      "Khi tiến trình chiếm toàn bộ bộ nhớ chính.",
+      "Khi các vùng trống không liên tục gây khó khăn cho cấp phát bộ nhớ mới."
+    ],
+    "correctIndex": 3,
+    "correctAnswer": "Khi các vùng trống không liên tục gây khó khăn cho cấp phát bộ nhớ mới.",
+    "explanation": null
+  },
+  {
+    "id": "q-47",
+    "source": "BTLT2 - 10_11_2026, 10H30 - 10H50 (1 lần)_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Unix/Linux sử dụng cấu trúc nào để để quản lý các khối đĩa cấp cho các tập tin/thư mục.",
+    "options": [
+      "Linked List",
+      "FAT",
+      "I-nodes",
+      "Datablock"
+    ],
+    "correctIndex": 2,
+    "correctAnswer": "I-nodes",
+    "explanation": null
+  },
+  {
+    "id": "q-48",
+    "source": "BTLT2 - 10_11_2026, 10H30 - 10H50 (1 lần)_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Khi đọc bảng phân vùng trong MBR, entry đầu tiên của bảng phân vùng chứa gì?",
+    "options": [
+      "Dữ liệu người dùng trên phân vùng đầu tiên.",
+      "Thông tin về phân vùng khởi động (bootable) đầu tiên, bao gồm vị trí bắt đầu và kích thước của phân vùng đó.",
+      "Mã khởi động của phân vùng.",
+      "Thông tin về hệ điều hành được cài đặt trên ổ đĩa."
+    ],
+    "correctIndex": 1,
+    "correctAnswer": "Thông tin về phân vùng khởi động (bootable) đầu tiên, bao gồm vị trí bắt đầu và kích thước của phân vùng đó.",
+    "explanation": null
+  },
+  {
+    "id": "q-49",
+    "source": "BTLT2 - 10_11_2026, 10H30 - 10H50 (1 lần)_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Đơn vị luận lý (logic) nhỏ nhất mà các hệ thống tập tin FAT12/16/32 thường sử dụng khi cấp phát không gian lưu trữ trên ổ đĩa cho các tập tin là gì.",
+    "options": [
+      "Cluster",
+      "Partition",
+      "Volum",
+      "Sector"
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "Cluster",
+    "explanation": null
+  },
+  {
+    "id": "q-50",
+    "source": "BTLT2 - 10_11_2026, 10H30 - 10H50 (1 lần)_ Xem lại bài làm _ Moodle CQDT fit@hcmus.html",
+    "question": "Bảng phân vùng (Partition table) cho biết thông tin về các phân vùng trên một ổ đĩa thường được lưu trữ ở đâu.",
+    "options": [
+      "Lưu ở đầu mỗi partition",
+      "Master Boot Record (MBR)",
+      "Boot Sector",
+      "RDET (Bảng thư mục gốc)"
+    ],
+    "correctIndex": 1,
+    "correctAnswer": "Master Boot Record (MBR)",
+    "explanation": null
+  },
+  {
+    "id": "q-51",
+    "source": "BTLT2_24120231.html",
+    "question": "Boot record của một phân vùng thường chứa gì?",
+    "options": [
+      "Thông tin về cấu trúc hệ điều hành được cài đặt.",
+      "Toàn bộ hệ điều hành.",
+      "Mã khởi động giúp tải hệ điều hành từ phân vùng.",
+      "Dữ liệu người dùng trên phân vùng."
+    ],
+    "correctIndex": 2,
+    "correctAnswer": "Mã khởi động giúp tải hệ điều hành từ phân vùng.",
+    "explanation": null
+  },
+  {
+    "id": "q-52",
+    "source": "BTLT2_24120231.html",
+    "question": "Thuật toán thay thế trang Optimal hoạt động như thế nào?",
+    "options": [
+      "Thay thế trang sẽ không được sử dụng lâu nhất trong tương lai.",
+      "Thay thế trang đầu tiên được nạp vào bộ nhớ.",
+      "Thay thế trang lâu không được sử dụng nhất trong quá khứ.",
+      "Thay thế trang được sử dụng gần đây nhất."
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "Thay thế trang sẽ không được sử dụng lâu nhất trong tương lai.",
+    "explanation": null
+  },
+  {
+    "id": "q-53",
+    "source": "BTLT2_24120231.html",
+    "question": "Kích thước file lớn nhất mà hệ thống tập tin FAT32 có thể quản lý.",
+    "options": [
+      "32GB",
+      "16GB",
+      "64GB",
+      "4GB"
+    ],
+    "correctIndex": 3,
+    "correctAnswer": "4GB",
+    "explanation": null
+  },
+  {
+    "id": "q-54",
+    "source": "BTLT2_24120231.html",
+    "question": "Thuật toán thay thế trang nào hiệu quả nhất nhưng khó áp dụng trực tiếp trong thực tế?",
+    "options": [
+      "Optimal",
+      "Second Chance",
+      "FIFO",
+      "LRU"
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "Optimal",
+    "explanation": null
+  },
+  {
+    "id": "q-55",
+    "source": "BTLT2_24120231.html",
+    "question": "Một bộ nhớ chính 512MB, kích thước trang 4096 bytes. Số khung trang (frame) trong bộ nhớ là:",
+    "options": [
+      "2^12",
+      "2^10",
+      "2^14",
+      "2^17"
+    ],
+    "correctIndex": 3,
+    "correctAnswer": "2^17",
+    "explanation": null
+  },
+  {
+    "id": "q-56",
+    "source": "BTLT2_24120231.html",
+    "question": "Giả sử một hệ thống dùng FIFO với chuỗi truy xuất trang gồm 20 lần, lỗi trang xảy ra 12 lần. Tỷ lệ lỗi trang là:",
+    "options": [
+      "50%",
+      "70%",
+      "40%",
+      "60%"
+    ],
+    "correctIndex": 3,
+    "correctAnswer": "60%",
+    "explanation": null
+  },
+  {
+    "id": "q-57",
+    "source": "BTLT2_24120231.html",
+    "question": "Hệ thống có 48-bit địa chỉ ảo, 32-bit địa chỉ vật lý, kích thước trang 8KB. Có bao nhiêu phần tử trong bảng trang?",
+    "options": [
+      "2^20",
+      "2^25",
+      "2^30",
+      "2^35"
+    ],
+    "correctIndex": 3,
+    "correctAnswer": "2^35",
+    "explanation": null
+  },
+  {
+    "id": "q-58",
+    "source": "BTLT2_24120231.html",
+    "question": "Kích thước một phần tử trong bảng FAT32.",
+    "options": [
+      "16 bytes",
+      "32 bytes",
+      "4 bytes",
+      "8 bytes"
+    ],
+    "correctIndex": 2,
+    "correctAnswer": "4 bytes",
+    "explanation": null
+  },
+  {
+    "id": "q-59",
+    "source": "BTLT2_24120231.html",
+    "question": "Một hệ thống có kích thước trang là 4KB và địa chỉ ảo 22 bit. Bảng trang tối đa có bao nhiêu phần tử?",
+    "options": [
+      "2048",
+      "1024",
+      "512",
+      "256"
+    ],
+    "correctIndex": 1,
+    "correctAnswer": "1024",
+    "explanation": null
+  },
+  {
+    "id": "q-60",
+    "source": "BTLT2_24120231.html",
+    "question": "Một hệ thống tập tin trên Unix sử dụng I-node có 10 con trỏ trực tiếp (direct block) và 1 con trỏ gián tiếp cấp 1 (single indirect) để quản lý các khối đĩa (disk block) có kích thước 512 bytes. Mỗi con trỏ cần 4 bytes để lưu trữ giá trị. Cho biết kích thước tập tin tối đa mà hệ thống này có thể quản lý.",
+    "options": [
+      "~65KB",
+      "~60MB",
+      "~75KB",
+      "~85MB"
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "~65KB",
+    "explanation": null
+  },
+  {
+    "id": "q-61",
+    "source": "questions.md",
+    "question": "Unix/Linux sử dụng cấu trúc nào để quản lý các khối đĩa cấp cho các tập tin thư mục.",
+    "options": [
+      "Datablock",
+      "FAT",
+      "I-nodes",
+      "Linked List"
+    ],
+    "correctIndex": 2,
+    "correctAnswer": "I-nodes",
+    "explanation": null
+  },
+  {
+    "id": "q-62",
+    "source": "questions.md",
+    "question": "Một hệ thống dùng 4KB trang, RAM 32KB. Số khung trang vật lý là bao nhiêu?",
+    "options": [
+      "32",
+      "8",
+      "4",
+      "16"
+    ],
+    "correctIndex": 1,
+    "correctAnswer": "8",
+    "explanation": null
+  },
+  {
+    "id": "q-63",
+    "source": "questions.md",
+    "question": "Trong thuật toán thay thế trang FIFO, trang nào sẽ bị loại bỏ khi cần nạp trang mới?",
+    "options": [
+      "Trang được sử dụng ít nhất trong tương lai",
+      "Trang được sử dụng gần đây nhất",
+      "Trang có độ dài (offset) nhỏ nhất",
+      "Trang được nạp vào sớm nhất."
+    ],
+    "correctIndex": 3,
+    "correctAnswer": "Trang được nạp vào sớm nhất.",
+    "explanation": null
+  },
+  {
+    "id": "q-64",
+    "source": "questions.md",
+    "question": "Một hệ thống có 32-bit địa chỉ logic, kích thước trang 4KB. Số trang tối đa trong không gian địa chỉ logic là",
+    "options": [
+      "220",
+      "232",
+      "222",
+      "210"
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "220",
+    "explanation": null
+  },
+  {
+    "id": "q-65",
+    "source": "questions.md",
+    "question": "Giả sử p=0.6, tm=100ns, tp=150ns. Thời gian truy cập bộ nhớ hiệu dụng (EAT) là",
+    "options": [
+      "130ns",
+      "140ns",
+      "120ns",
+      "110ns"
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "130ns",
+    "explanation": null
+  },
+  {
+    "id": "q-66",
+    "source": "questions.md",
+    "question": "Trong hệ thống tập tin dựa trên Unix như ext3 và ext4, một i-node chứa thông tin nào sau đây?",
+    "options": [
+      "Tên của tập tin và đường dẫn đầy đủ.",
+      "Nội dung dữ liệu của tập tin.",
+      "Metadata của tập tin, bao gồm quyền truy cập, kích thước, và chỉ số các block dữ liệu.",
+      "Danh sách các tập tin trong thư mục gốc."
+    ],
+    "correctIndex": 2,
+    "correctAnswer": "Metadata của tập tin, bao gồm quyền truy cập, kích thước, và chỉ số các block dữ liệu.",
+    "explanation": null
+  },
+  {
+    "id": "q-67",
+    "source": "questions.md",
+    "question": "Hai loại đường dẫn đến một tập tin thư mục gọi là gì.",
+    "options": [
+      "global & relative",
+      "local & global",
+      "absolute & relative",
+      "relative & local"
+    ],
+    "correctIndex": 2,
+    "correctAnswer": "absolute & relative",
+    "explanation": null
+  },
+  {
+    "id": "q-68",
+    "source": "questions.md",
+    "question": "Trong bảng phân vùng của MBR, mỗi entry trong bảng phân vùng chiếm bao nhiêu byte?",
+    "options": [
+      "12 bytes",
+      "16 bytes",
+      "8 bytes",
+      "32 bytes"
+    ],
+    "correctIndex": 1,
+    "correctAnswer": "16 bytes",
+    "explanation": null
+  },
+  {
+    "id": "q-69",
+    "source": "questions.md",
+    "question": "Đơn vị luận lý (logic) nhỏ nhất mà các hệ thống tập tin FAT12/16/32 thường sử dụng khi cấp phát không gian lưu trữ trên đĩa cho các tập tin là gì.",
+    "options": [
+      "Volume",
+      "Partition",
+      "Sector",
+      "Cluster"
+    ],
+    "correctIndex": 3,
+    "correctAnswer": "Cluster",
+    "explanation": null
+  },
+  {
+    "id": "q-70",
+    "source": "questions.md",
+    "question": "Cho 3 tiến trình P1, P2 và P3 có thời gian đến lần lượt là 0, 1, 2; thời gian xử lý lần lượt là 5, 4, 3 và độ ưu tiên lần lượt là 3, 1, 2 (giá trị càng nhỏ mức ưu tiên càng cao). Hệ thống áp dụng thuật toán điều phối theo độ ưu tiên độc quyền. Tại thời điểm $t=6$ tiến trình nào đang sở hữu CPU?",
+    "options": [
+      "P2",
+      "P3",
+      "CPU đang rỗi",
+      "P1"
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "P2",
+    "explanation": null
+  },
+  {
+    "id": "q-71",
+    "source": "questions.md",
+    "question": "Phát biểu nào KHÔNG chính xác khi nói về cơ chế liên lạc bằng SOCKET.",
+    "options": [
+      "Địa chỉ các socket được xác định bằng IP address của máy tính và số port dành cho socket trên máy tính đó",
+      "Socket là cơ chế liên lạc giữa các tiến trình qua mạng nên KHÔNG cho phép trao đổi thông điệp giữa các tiến trình trên cùng máy tính.",
+      "Trước khi bắt đầu quá trình trao đổi thông điệp các socket phải được kết nối với một địa chỉ"
+    ],
+    "correctIndex": 1,
+    "correctAnswer": "Socket là cơ chế liên lạc giữa các tiến trình qua mạng nên KHÔNG cho phép trao đổi thông điệp giữa các tiến trình trên cùng máy tính.",
+    "explanation": null
+  },
+  {
+    "id": "q-72",
+    "source": "questions.md",
+    "question": "Nếu một tiến trình có thời gian xử lý là 10 ms và thời gian chờ là 20 ms, thời gian lưu trú của tiến trình đó là bao nhiêu?",
+    "options": [
+      "40 ms",
+      "30 ms",
+      "20 ms",
+      "10 ms"
+    ],
+    "correctIndex": 1,
+    "correctAnswer": "30 ms",
+    "explanation": null
+  },
+  {
+    "id": "q-73",
+    "source": "questions.md",
+    "question": "Khai báo lệnh sau đây `int *a = (int *) malloc(100 * sizeof(int));` với lệnh `malloc` là lệnh ngôn ngữ C để yêu cầu cấp phát bộ nhớ động cho 100 phần tử số nguyên. Phát biểu nào sau đây chính xác.",
+    "options": [
+      "Vùng nhớ cho biến a và mảng 100 số nguyên đều ở Heap",
+      "Vùng nhớ cho biến a ở Heap còn vùng nhớ cho mảng 100 số nguyên ở Stack",
+      "Vùng nhớ cho biến a và mảng 100 số nguyên đều ở Stack",
+      "Vùng nhớ cho biến a ở Stack còn vùng nhớ cho mảng 100 số nguyên ở Heap"
+    ],
+    "correctIndex": 3,
+    "correctAnswer": "Vùng nhớ cho biến a ở Stack còn vùng nhớ cho mảng 100 số nguyên ở Heap",
+    "explanation": null
+  },
+  {
+    "id": "q-74",
+    "source": "questions.md",
+    "question": "Trong thuật toán Cơ hội thứ hai, nếu bit tham chiếu của trang là 1, hệ thống sẽ làm gì?",
+    "options": [
+      "Thay thế trang ngay lập tức.",
+      "Không làm gì cả và giữ nguyên trạng thái.",
+      "Đặt bit tham chiếu về 0 và chuyển trang đó xuống cuối hàng đợi.",
+      "Xóa trang và đặt lại bit tham chiếu về 0."
+    ],
+    "correctIndex": 2,
+    "correctAnswer": "Đặt bit tham chiếu về 0 và chuyển trang đó xuống cuối hàng đợi.",
+    "explanation": null
+  },
+  {
+    "id": "q-75",
+    "source": "questions.md",
+    "question": "Hệ thống tập tin trên Unix quản lý việc cấp phát khối đĩa cho các tập tin dựa trên kỹ thuật cấp phát nào.",
+    "options": [
+      "Cấp phát theo danh sách (Linked List Allocation)",
+      "Cấp phát theo chỉ mục (Indexed Allocation)",
+      "Cấp phát liên tục (Contiguous Allocation)"
+    ],
+    "correctIndex": 1,
+    "correctAnswer": "Cấp phát theo chỉ mục (Indexed Allocation)",
+    "explanation": null
+  },
+  {
+    "id": "q-76",
+    "source": "questions.md",
+    "question": "Hệ thống tập tin NTFS được sử dụng chủ yếu trên hệ điều hành nào.",
+    "options": [
+      "Linux",
+      "Windows",
+      "Android",
+      "macOS"
+    ],
+    "correctIndex": 1,
+    "correctAnswer": "Windows",
+    "explanation": null
+  },
+  {
+    "id": "q-77",
+    "source": "questions.md",
+    "question": "Giả sử $p=0.6$, $t_m=100\\text{ns}$, $t_p=150\\text{ns}$. Thời gian truy cập bộ nhớ hiệu dụng (EAT) là:",
+    "options": [
+      "120ns",
+      "110ns",
+      "130ns",
+      "140ns"
+    ],
+    "correctIndex": 2,
+    "correctAnswer": "130ns",
+    "explanation": null
+  },
+  {
+    "id": "q-78",
+    "source": "questions.md",
+    "question": "Trong phân đoạn (segmentation), cặp $<s, d>$ có ý nghĩa gì?",
+    "options": [
+      "Số thứ tự đoạn và độ dời.",
+      "Số thứ tự trang và độ dời.",
+      "Số thứ tự khung và độ dời.",
+      "Số thứ tự vùng nhớ và độ dời."
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "Số thứ tự đoạn và độ dời.",
+    "explanation": null
+  },
+  {
+    "id": "q-79",
+    "source": "questions.md",
+    "question": "Trong phân trang, cặp $<p, d>$ thể hiện điều gì?",
+    "options": [
+      "Số hiệu trang và độ dời trong trang.",
+      "Số hiệu đoạn và độ dời trong đoạn.",
+      "Số thứ tự phân vùng và địa chỉ trong phân vùng.",
+      "Số hiệu tiến trình và địa chỉ vật lý."
+    ],
+    "correctIndex": 0,
+    "correctAnswer": "Số hiệu trang và độ dời trong trang.",
+    "explanation": null
+  }
+];
