@@ -58,11 +58,44 @@
   const wrongQuestionsList = document.getElementById('wrong-questions-list');
 
   // ==========================================================================
+  // KaTeX Math Rendering Helper
+  // ==========================================================================
+
+  function renderMath(targetElement) {
+    if (!targetElement) return;
+    if (window.renderMathInElement) {
+      window.renderMathInElement(targetElement, {
+        delimiters: [
+          { left: '$$', right: '$$', display: true },
+          { left: '$', right: '$', display: false },
+          { left: '\\(', right: '\\)', display: false },
+          { left: '\\[', right: '\\]', display: true }
+        ],
+        throwOnError: false
+      });
+    }
+  }
+
+  // Ensure math renders even if KaTeX script finishes loading slightly later
+  function ensureMathLoaded() {
+    let attempts = 0;
+    const interval = setInterval(() => {
+      attempts++;
+      if (window.renderMathInElement) {
+        clearInterval(interval);
+        renderMath(document.querySelector('.screen.active'));
+      }
+      if (attempts > 30) clearInterval(interval);
+    }, 100);
+  }
+
+  // ==========================================================================
   // Initialization & Data Loading
   // ==========================================================================
 
   async function init() {
     bindEvents();
+    ensureMathLoaded();
 
     if (window.QUIZ_DATA && Array.isArray(window.QUIZ_DATA)) {
       allQuestions = window.QUIZ_DATA;
@@ -189,6 +222,7 @@
 
     // Question Text
     quizQText.textContent = q.question;
+    renderMath(quizQText);
 
     // Reset Elements
     if (quizWaitingBanner) quizWaitingBanner.classList.remove('active');
@@ -215,6 +249,8 @@
       optItem.addEventListener('click', () => onOptionSelected(idx, optItem));
       quizOptionsContainer.appendChild(optItem);
     });
+
+    renderMath(quizOptionsContainer);
   }
 
   // ==========================================================================
@@ -282,6 +318,7 @@
     if (q.explanation && q.explanation.trim().length > 0) {
       feedbackExplanation.textContent = `💡 Giải thích: ${q.explanation}`;
       feedbackExplanation.style.display = 'block';
+      renderMath(feedbackExplanation);
     } else {
       feedbackExplanation.style.display = 'none';
     }
@@ -356,6 +393,7 @@
         `;
         wrongQuestionsList.appendChild(itemEl);
       });
+      renderMath(wrongQuestionsList);
     } else {
       wrongQuestionsSection.style.display = 'none';
       btnRetryWrong.style.display = 'none';

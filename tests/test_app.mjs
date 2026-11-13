@@ -26,8 +26,14 @@ function testApp() {
   if (!html.includes('src="app.js"')) {
     throw new Error('index.html missing script app.js');
   }
+  if (!html.includes('katex')) {
+    throw new Error('index.html missing KaTeX math library');
+  }
 
   // Check app.js key handlers
+  if (!js.includes('renderMath')) {
+    throw new Error('app.js missing renderMath helper');
+  }
   if (!js.includes('evaluateAnswer')) {
     throw new Error('app.js missing evaluateAnswer logic');
   }
