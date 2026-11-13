@@ -93,6 +93,8 @@
 
     btnExitQuiz.addEventListener('click', () => {
       if (confirm('Bạn có chắc chắn muốn dừng bài thi và quay lại trang chủ không?')) {
+        if (answerTimer) clearTimeout(answerTimer);
+        isAnswering = false;
         showScreen('welcome');
       }
     });
@@ -386,3 +388,4 @@
   document.addEventListener('DOMContentLoaded', init);
 
 })();
+

@@ -349,6 +349,8 @@ body {
   line-height: 1.55;
   color: #1e293b;
   margin-bottom: 20px;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 /* Options */
@@ -361,7 +363,7 @@ body {
 
 .option-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   padding: 14px 16px;
   background: var(--bg-card);
   border: 1.5px solid var(--border-color);
@@ -370,6 +372,8 @@ body {
   transition: all 0.2s ease;
   min-height: 54px;
   user-select: none;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .option-item:hover:not(.disabled) {
@@ -415,6 +419,7 @@ body {
   font-size: 13px;
   font-weight: 700;
   margin-right: 14px;
+  margin-top: 2px;
   flex-shrink: 0;
   transition: all 0.2s;
 }
@@ -779,3 +784,4 @@ body {
     display: none;
   }
 }
+

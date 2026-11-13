@@ -67,7 +67,7 @@
     ],
     "correctIndex": 0,
     "correctAnswer": "Pipe",
-    "explanation": "**Câu hỏi 17 (Trang 8):** Khi trao đổi bằng socket, IP address là để định danh cho hai tiến trình client và server.\n**Câu hỏi 18 (Trang 8):** Tiến trình P1 bị rơi vào trạng thái Zombie khi nào\n**Câu hỏi 19 (Trang 8):** Để truy cập vào các dịch vụ của hệ điều hành, chúng ta cần thông qua.\n**Câu hỏi 15 (Trang 8):** Kiến trúc hệ điều hành nào dưới đây có các dịch vụ và chức năng hệ điều hành đều chạy trong không gian hạt nhân (kernel mode), tạo nên một cấu trúc hạt nhân lớn và phức tạp?\n**Câu hỏi 16 (Trang 8):** Khác biệt chính của multitasking OS so với phiên bản tiền nhiệm multiprogramming OS là gì.\n**Câu hỏi 13 (Trang 9):** Khi tiến trình đang thực thi mà bị tạm dừng, Program Counter trong PCB sẽ lưu lại thông tin gì?\n**Câu hỏi 14 (Trang 9):** Khi tiến trình đang đọc file mà bị tạm dừng, thì thông tin liên quan tới việc đọc file này sẽ được lưu trữ ở đâu trong PCB (khối quản lý tiến trình)?\n**Câu hỏi 11 (Trang 9):** Cho 3 tiến trình P1, P2, và P3 với thời gian đến hệ thống lần lượt là 0, 1, 2 và thời gian xử lý lần lượt là 5, 4, 3. Hệ thống áp dụng thuật toán điều phối SJF độc quyền. Thời gian lưu trú trung bình của các tiến trình là:\n**Câu hỏi 12 (Trang 9):** Tiến trình đang thực thi sẽ chuyển về loại danh sách nào khi xảy ra sự kiện đợi một thao tác I/O hoàn tất.\n**Câu hỏi 9 (Trang 10):** Tiêu chí nào sau đây là chính yếu cho một hệ thống đa nhiệm.\n**Câu hỏi 10 (Trang 10):** Cho 3 tiến trình P1, P2 và P3 có thời gian đến lần lượt là 0, 1, 2 và thời gian xử lý lần lượt là 7, 3, 2. Hệ thống áp dụng thuật toán điều phối SJF không độc quyền (SRTN). Thời gian chờ trung bình của các tiến trình là:\n**Câu hỏi 7 (Trang 10):** Phát biểu nào sau đây KHÔNG đúng về thuật toán lập lịch theo ưu tiên?\n**Câu hỏi 8 (Trang 10):** Phát biểu nào sau đây chính xác.\n**Câu hỏi 5 (Trang 11):** Cho 3 tiến trình P1, P2 và P3 có thời gian đến lần lượt là 0, 1, 2 thời gian xử lý lần lượt là 5, 4, 3 và độ ưu tiên lần lượt là 3, 1, 2 (giá trị càng nhỏ mức ưu tiên càng cao). Hệ thống áp dụng thuật toán điều phối theo độ ưu tiên độc quyền. Tại thời điểm t = 6, tiến trình nào đang sở hữu CPU?\n**Câu hỏi 6 (Trang 11):** Trong các phát biểu sau, chọn ra phát biểu KHÔNG chính xác về chế độ người dùng và chế độ nhân (kernel)?\n**Câu hỏi 3 (Trang 11):** Cho 3 tiến trình P1, P2 và P3 có thời gian đến lần lượt là 0, 1, 2 thời gian xử lý lần lượt là 6, 3, 2 và độ ưu tiên lần lượt là 3, 1, 2 (giá trị càng nhỏ mức ưu tiên càng cao). Hệ thống áp dụng thuật toán điều phối theo độ ưu tiên không độc quyền. Thời gian chờ trung bình của các tiến trình là:\n**Câu hỏi 4 (Trang 11):** Nếu một tiến trình có thời gian xử lý là 10 ms và thời gian chờ là 20 ms, thời gian lưu trú của tiến trình đó là bao nhiêu?\n**Câu hỏi 1 (Trang 12):** Phát biểu nào KHÔNG chính xác khi nói về cơ chế liên lạc bằng SOCKET.\n**Câu hỏi 2 (Trang 12):** Phát biểu nào sau đây KHÔNG đúng về các thuật toán lập lịch?\nToàn bộ 40 câu hỏi (gồm phần **BTL1** và **BTLT2**) trong file PDF được trích xuất, chuẩn hóa lỗi nhận diện chữ và trình bày theo đúng cấu trúc yêu cầu:"
+    "explanation": null
   },
   {
     "id": "q-6",
@@ -261,7 +261,7 @@
     ],
     "correctIndex": 2,
     "correctAnswer": "Lập lịch FCFS có thể là độc quyền hoặc không độc quyền.",
-    "explanation": null
+    "explanation": "Toàn bộ 40 câu hỏi (gồm phần **BTL1** và **BTLT2**) trong file PDF được trích xuất, chuẩn hóa lỗi nhận diện chữ và trình bày theo đúng cấu trúc yêu cầu:"
   },
   {
     "id": "q-20",
@@ -962,12 +962,12 @@
   {
     "id": "q-70",
     "source": "questions.md",
-    "question": "Cho 3 tiến trình P1, P2 và P3 có thời gian đến lần lượt là 0, 1, 2; thời gian xử lý lần lượt là 5, 4, 3 và độ ưu tiên lần lượt là 3, 1, 2 (giá trị càng nhỏ mức ưu tiên càng cao). Hệ thống áp dụng thuật toán điều phối theo độ ưu tiên độc quyền. Tại thời điểm $t=6$ tiến trình nào đang sở hữu CPU?",
+    "question": "Cho 3 tiến trình P1, P2 và P3 có thời gian đến lần lượt là 0, 1, 2 thời gian xử lý lần lượt là 5, 4, 3 và độ ưu tiên lần lượt là 3, 1, 2 (giá trị càng nhỏ mức ưu tiên càng cao). Hệ thống áp dụng thuật toán điều phối theo độ ưu tiên độc quyền. Tại thời điểm t = 6, tiến trình nào đang sở hữu CPU?",
     "options": [
       "P2",
-      "P3",
       "CPU đang rỗi",
-      "P1"
+      "P1",
+      "P3"
     ],
     "correctIndex": 0,
     "correctAnswer": "P2",
@@ -976,28 +976,28 @@
   {
     "id": "q-71",
     "source": "questions.md",
-    "question": "Phát biểu nào KHÔNG chính xác khi nói về cơ chế liên lạc bằng SOCKET.",
+    "question": "Nếu một tiến trình có thời gian xử lý là 10 ms và thời gian chờ là 20 ms, thời gian lưu trú của tiến trình đó là bao nhiêu?",
     "options": [
-      "Địa chỉ các socket được xác định bằng IP address của máy tính và số port dành cho socket trên máy tính đó",
-      "Socket là cơ chế liên lạc giữa các tiến trình qua mạng nên KHÔNG cho phép trao đổi thông điệp giữa các tiến trình trên cùng máy tính.",
-      "Trước khi bắt đầu quá trình trao đổi thông điệp các socket phải được kết nối với một địa chỉ"
+      "20 ms",
+      "30 ms",
+      "10 ms",
+      "40 ms"
     ],
     "correctIndex": 1,
-    "correctAnswer": "Socket là cơ chế liên lạc giữa các tiến trình qua mạng nên KHÔNG cho phép trao đổi thông điệp giữa các tiến trình trên cùng máy tính.",
+    "correctAnswer": "30 ms",
     "explanation": null
   },
   {
     "id": "q-72",
     "source": "questions.md",
-    "question": "Nếu một tiến trình có thời gian xử lý là 10 ms và thời gian chờ là 20 ms, thời gian lưu trú của tiến trình đó là bao nhiêu?",
+    "question": "Phát biểu nào KHÔNG chính xác khi nói về cơ chế liên lạc bằng SOCKET.",
     "options": [
-      "40 ms",
-      "30 ms",
-      "20 ms",
-      "10 ms"
+      "Socket là cơ chế liên lạc giữa các tiến trình qua mạng nên KHÔNG cho phép trao đổi thông điệp giữa các tiến trình trên cùng máy tính.",
+      "Địa chỉ các socket được xác định bằng IP address của máy tính và số port dành cho socket trên máy tính đó",
+      "Trước khi bắt đầu quá trình trao đổi thông điệp các socket phải được kết nối với một địa chỉ"
     ],
-    "correctIndex": 1,
-    "correctAnswer": "30 ms",
+    "correctIndex": 0,
+    "correctAnswer": "Socket là cơ chế liên lạc giữa các tiến trình qua mạng nên KHÔNG cho phép trao đổi thông điệp giữa các tiến trình trên cùng máy tính.",
     "explanation": null
   },
   {
