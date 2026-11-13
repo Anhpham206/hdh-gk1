@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Ôn Thi Trắc Nghiệm Hệ Điều Hành - K24 HCMUS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+
+    <!-- SCREEN 1: WELCOME SCREEN -->
+    <section id="screen-welcome" class="screen active">
+      <div class="header-card">
+        <div class="badge-pill">K24 FIT - HCMUS</div>
+        <h1 class="main-title">Hệ Điều Hành</h1>
+        <p class="subtitle">Hệ thống luyện thi trắc nghiệm Giữa Kỳ (GK)</p>
+        <div class="stats-banner">
+          <span class="icon">📚</span>
+          <span id="total-questions-count">Đang tải...</span> câu hỏi trong cơ sở dữ liệu
+        </div>
+      </div>
+
+      <div class="mode-selection">
+        <h2 class="section-title">Chọn Chế Độ Luyện Tập</h2>
+
+        <!-- Mode 1: All Questions -->
+        <button id="btn-mode-all" class="mode-card">
+          <div class="mode-icon mode-icon-all">📖</div>
+          <div class="mode-info">
+            <div class="mode-name">Làm Toàn Bộ Câu Hỏi</div>
+            <div class="mode-desc">Luyện lần lượt tất cả câu hỏi trong ngân hàng đề</div>
+          </div>
+          <div class="arrow-icon">➔</div>
+        </button>
+
+        <!-- Mode 2: Random Questions -->
+        <div class="mode-card random-mode-card">
+          <div class="mode-info-row">
+            <div class="mode-icon mode-icon-random">🎲</div>
+            <div class="mode-info">
+              <div class="mode-name">Thi Thử Ngẫu Nhiên</div>
+              <div class="mode-desc">Hệ thống xáo trộn và rút ngẫu nhiên bộ đề</div>
+            </div>
+          </div>
+          <div class="random-actions">
+            <button id="btn-mode-random-20" class="btn-sub-action">Làm 20 câu</button>
+            <button id="btn-mode-random-30" class="btn-sub-action">Làm 30 câu</button>
+          </div>
+        </div>
+      </div>
+
+      <footer class="app-footer">
+        <p>Tương thích giao diện máy tính & điện thoại • Host trên GitHub Pages</p>
+      </footer>
+    </section>
+
+    <!-- SCREEN 2: QUIZ SCREEN -->
+    <section id="screen-quiz" class="screen">
+      <!-- Quiz Header -->
+      <div class="quiz-header">
+        <button id="btn-exit-quiz" class="btn-icon" title="Thoát về trang chủ">
+          ✕ <span class="exit-text">Thoát</span>
+        </button>
+        <div class="quiz-progress-text">
+          <span id="quiz-current-q">1</span> / <span id="quiz-total-q">20</span>
+        </div>
+        <div class="quiz-score-badge">
+          Đúng: <strong id="quiz-live-score">0</strong>
+        </div>
+      </div>
+
+      <!-- Progress bar -->
+      <div class="progress-track">
+        <div id="quiz-progress-fill" class="progress-fill"></div>
+      </div>
+
+      <!-- Question Card -->
+      <div class="quiz-body">
+        <div class="question-meta">
+          <span id="quiz-q-source" class="tag-source">Nguồn</span>
+          <span id="quiz-q-id" class="tag-id">#ID</span>
+        </div>
+
+        <h2 id="quiz-q-text" class="question-text">
+          Nội dung câu hỏi hiển thị tại đây...
+        </h2>
+
+        <!-- Options List -->
+        <div id="quiz-options-container" class="options-container">
+          <!-- Rendered dynamically by JS -->
+        </div>
+
+        <!-- Waiting Timer Indicator (2s) -->
+        <div id="quiz-waiting-banner" class="waiting-banner">
+          <div class="spinner"></div>
+          <span>Đang kiểm tra kết quả (2s)...</span>
+        </div>
+
+        <!-- Feedback Banner -->
+        <div id="quiz-feedback-banner" class="feedback-banner">
+          <div id="feedback-icon" class="feedback-icon">✓</div>
+          <div class="feedback-content">
+            <div id="feedback-title" class="feedback-title">Chính xác!</div>
+            <div id="feedback-explanation" class="feedback-explanation"></div>
+          </div>
+        </div>
+
+        <!-- Next Question Action Button -->
+        <div class="quiz-action-bar">
+          <button id="btn-next-question" class="btn-primary btn-next">
+            <span>Câu tiếp theo</span> ➔
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 3: RESULTS SCREEN -->
+    <section id="screen-results" class="screen">
+      <div class="results-card">
+        <div id="result-emoji" class="result-emoji">🎉</div>
+        <h2 id="result-title" class="result-title">Hoàn Thành Bài Thi!</h2>
+        <p id="result-subtitle" class="result-subtitle">Bạn đã hoàn thành lượt ôn tập</p>
+
+        <!-- Score Ring / Circle -->
+        <div class="score-circle">
+          <span id="result-score-number" class="score-number">10.0</span>
+          <span class="score-label">Điểm số</span>
+        </div>
+
+        <div class="result-stats-grid">
+          <div class="stat-box stat-correct">
+            <div class="stat-val" id="stat-correct-count">0</div>
+            <div class="stat-lbl">Câu đúng</div>
+          </div>
+          <div class="stat-box stat-wrong">
+            <div class="stat-val" id="stat-wrong-count">0</div>
+            <div class="stat-lbl">Câu sai</div>
+          </div>
+          <div class="stat-box stat-pct">
+            <div class="stat-val" id="stat-accuracy-pct">0%</div>
+            <div class="stat-lbl">Tỉ lệ đúng</div>
+          </div>
+        </div>
+
+        <div class="result-actions">
+          <button id="btn-retry-wrong" class="btn-secondary" style="display: none;">
+            🔁 Luyện lại các câu làm sai (<span id="retry-wrong-count">0</span>)
+          </button>
+          <button id="btn-new-quiz" class="btn-primary">
+            🏠 Về trang chủ làm lượt mới
+          </button>
+        </div>
+      </div>
+
+      <!-- Wrong Questions Review Section -->
+      <div id="wrong-questions-section" class="wrong-questions-section" style="display: none;">
+        <h3 class="section-title">Xem Lại Các Câu Làm Sai</h3>
+        <div id="wrong-questions-list" class="wrong-questions-list">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Embed questions data directly (no CORS restriction) -->
+  <script src="data/questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
